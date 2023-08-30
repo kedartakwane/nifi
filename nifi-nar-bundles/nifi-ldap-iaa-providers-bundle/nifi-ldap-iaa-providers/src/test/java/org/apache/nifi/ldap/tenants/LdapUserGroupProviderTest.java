@@ -775,7 +775,7 @@ public class LdapUserGroupProviderTest {
         when(configurationContext.getProperty(PROP_CONNECT_TIMEOUT)).thenReturn(new StandardPropertyValue("30 secs", null, ParameterLookup.EMPTY));
         when(configurationContext.getProperty(PROP_READ_TIMEOUT)).thenReturn(new StandardPropertyValue("30 secs", null, ParameterLookup.EMPTY));
         when(configurationContext.getProperty(PROP_REFERRAL_STRATEGY)).thenReturn(new StandardPropertyValue(ReferralStrategy.FOLLOW.name(), null, ParameterLookup.EMPTY));
-        when(configurationContext.getProperty(PROP_PAGE_SIZE)).thenReturn(new StandardPropertyValue(null, null, ParameterLookup.EMPTY));
+        when(configurationContext.getProperty(PROP_PAGE_SIZE)).thenReturn(new StandardPropertyValue("0", null, ParameterLookup.EMPTY));
         when(configurationContext.getProperty(PROP_SYNC_INTERVAL)).thenReturn(new StandardPropertyValue("30 mins", null, ParameterLookup.EMPTY));
         when(configurationContext.getProperty(PROP_GROUP_MEMBERSHIP_ENFORCE_CASE_SENSITIVITY)).thenReturn(new StandardPropertyValue("true", null, ParameterLookup.EMPTY));
 
